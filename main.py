@@ -333,7 +333,7 @@ hr {
 """, unsafe_allow_html=True)
 
 # ─── DATA PERSISTENCE ────────────────────────────────────────────────────────
-DATA_FILE = "hunt_log.json"
+DATA_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "hunt_log.json")
 
 def load_data():
     if os.path.exists(DATA_FILE):
